@@ -5,6 +5,6 @@
 
 ```bash
 
-sudo git clone https://github.com/dtulyakov/zsh.git /etc/zsh
-cd /etc/zsh && sudo git submodule init && sudo git submodule update
+sudo git clone --recursive https://github.com/dtulyakov/zsh.git /etc/zsh
+cd /etc/zsh && sudo git submodule update
 ```
