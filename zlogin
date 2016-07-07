@@ -7,4 +7,4 @@
 # msgs, from, etc.)
 #
 # Global Order: zshenv, zprofile, zshrc, zlogin
-echo -n -e "\033]0;${USER}@${HOST}\007"
+#echo 'sudo tmux attach-session || sudo tmux new-session -s `date +%Y-%M-%d_%H-%M_%S`'
