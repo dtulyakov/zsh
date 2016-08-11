@@ -134,6 +134,7 @@ pk () {
 
 alias beep='paplay /usr/share/sounds/ubuntu/ringtones/Harmonics.ogg'
 alias gacpp='git add --all && git commit -S -a && git pull origin master && git push origin master'
+alias gpall='for repo in $(ls); do (cd ${repo}; git pull ; cd ../) ; done'
 alias -s {pdf,djvu}="nohup evince"
 alias df='df -hT'
 alias ll='ls -lah'
@@ -158,6 +159,7 @@ alias delspacecomm="sed '/ *#/d; /^ *$/d' $1"
 alias getpass="head -c6 /dev/urandom | xxd -ps"
 #export TMOUT=1200
 #export EDITOR=/bin/nano
+export COLORTERM="gnome-terminal"
 export EDITOR=/usr/bin/vim
 export PAGER=/usr/bin/less
 export PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/usr/games"
