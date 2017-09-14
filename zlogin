@@ -9,3 +9,4 @@
 # Global Order: zshenv, zprofile, zshrc, zlogin
 #echo 'sudo tmux attach-session || sudo tmux new-session -s `date +%Y-%M-%d_%H-%M_%S`'
 #echo 'tmux attach-session || tmux new-session -s $(date +%Y-%M-%d_%H-%M_%S)'
+#EOF
