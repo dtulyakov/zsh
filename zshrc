@@ -62,7 +62,7 @@ if [ `whoami` = root ];
     fi
 fi
 
-RPROMPT=$'%{\e[1;32m%}[%{\e[1;34m%} %T %D %{\e[1;32m%}]%{\e[0m%}'
+RPROMPT=$'%{\e[1;32m%}[%{\e[1;34m%} %T 😼  %D %{\e[1;32m%}]%{\e[0m%}'
 zstyle ':completion:*' completer _expand _complete _ignored
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' list-colors ''
@@ -130,7 +130,7 @@ pk () {
 }
 
 alias beep='paplay /usr/share/sounds/ubuntu/ringtones/Harmonics.ogg'
-alias gacpp='git add --all && git commit -S -a && git pull --rebase origin master && git push origin master'
+alias gacpp='git add --all && git commit -S -a -v && git pull --rebase && git push'
 alias gpall='for repo in $(ls); do (cd ${repo}; git pull ; cd ../) ; done'
 alias -s {pdf,djvu}="nohup evince"
 alias df='df -hT'
