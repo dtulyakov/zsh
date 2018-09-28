@@ -89,6 +89,7 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_REDUCE_BLANKS
 setopt AUTO_CD
+setopt extendedhistory histignoredups incappendhistorytime
 autoload -Uz compinit
 compinit
 extract () {
